@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Sathyashree's Instant Resume Builder</h2>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <form id="resume-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="summary">Profile Summary:</label>
+                <textarea id="summary" name="summary"></textarea>
+
+                <div id="education-container">
+                    <label>Education:</label>
+                    <div class="education-entry">
+                        <input type="text" class="education" placeholder="Degree, Institution, Year">
+                    </div>
+                    <button type="button" id="add-education">Add Education</button>
+                </div>
+
+                <label>Skills:</label>
+                <div id="skills-box">
+                    <div id="skills-container">
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill1" name="skills" value="Python">
+                            <label for="skill1">Python</label>
+                            <select id="skill1-level" name="skill1-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill2" name="skills" value="Java">
+                            <label for="skill2">Java</label>
+                            <select id="skill2-level" name="skill2-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill3" name="skills" value="C++">
+                            <label for="skill3">C++</label>
+                            <select id="skill3-level" name="skill3-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill4" name="skills" value="JavaScript">
+                            <label for="skill4">JavaScript</label>
+                            <select id="skill4-level" name="skill4-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill5" name="skills" value="HTML">
+                            <label for="skill5">HTML</label>
+                            <select id="skill5-level" name="skill5-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill6" name="skills" value="CSS">
+                            <label for="skill6">CSS</label>
+                            <select id="skill6-level" name="skill6-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill7" name="skills" value="SQL">
+                            <label for="skill7">SQL</label>
+                            <select id="skill7-level" name="skill7-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill8" name="skills" value="React">
+                            <label for="skill8">React</label>
+                            <select id="skill8-level" name="skill8-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill9" name="skills" value="Angular">
+                            <label for="skill9">Angular</label>
+                            <select id="skill9-level" name="skill9-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill10" name="skills" value="Node.js">
+                            <label for="skill10">Node.js</label>
+                            <select id="skill10-level" name="skill10-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill11" name="skills" value="Django">
+                            <label for="skill11">Django</label>
+                            <select id="skill11-level" name="skill11-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill12" name="skills" value="Flask">
+                            <label for="skill12">Flask</label>
+                            <select id="skill12-level" name="skill12-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill13" name="skills" value="AWS">
+                            <label for="skill13">AWS</label>
+                            <select id="skill13-level" name="skill13-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill14" name="skills" value="Azure">
+                            <label for="skill14">Azure</label>
+                            <select id="skill14-level" name="skill14-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill15" name="skills" value="Google Cloud Platform">
+                            <label for="skill15">Google Cloud Platform</label>
+                            <select id="skill15-level" name="skill15-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill16" name="skills" value="Docker">
+                            <label for="skill16">Docker</label>
+                            <select id="skill16-level" name="skill16-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill17" name="skills" value="Kubernetes">
+                            <label for="skill17">Kubernetes</label>
+                            <select id="skill17-level" name="skill17-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill18" name="skills" value="Git">
+                            <label for="skill18">Git</label>
+                            <select id="skill18-level" name="skill18-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill19" name="skills" value="Jira">
+                            <label for="skill19">Jira</label>
+                            <select id="skill19-level" name="skill19-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill20" name="skills" value="TensorFlow">
+                            <label for="skill20">TensorFlow</label>
+                            <select id="skill20-level" name="skill20-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill21" name="skills" value="Keras">
+                            <label for="skill21">Keras</label>
+                            <select id="skill21-level" name="skill21-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill22" name="skills" value="NumPy">
+                            <label for="skill22">NumPy</label>
+                            <select id="skill22-level" name="skill22-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill23" name="skills" value="Pandas">
+                            <label for="skill23">Pandas</label>
+                            <select id="skill23-level" name="skill23-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="skill-item">
+                            <input type="checkbox" id="skill24" name="skills" value="Scikit-Learn">
+                            <label for="skill24">Scikit-Learn</label>
+                            <select id="skill24-level" name="skill24-level">
+                                <option value="Basic">Basic</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experience-container">
+                    <label>Experience:</label>
+                    <div class="experience-entry">
+                        <input type="text" class="experience" placeholder="Job Title, Company, Year">
+                    </div>
+                    <button type="button" id="add-experience">Add Experience</button>
+                </div>
+
+                <button type="reset" id="clear-form">Clear Form</button>
+            </form>
+        </div>
+        <div class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-output"></div>
+            <button id="download-pdf">Download PDF</button>
+        </div>
+    </div>
+    <!-- A project by Sathyashree P -->
+    <script src="resume.js"></script>
+</body>
+</html>

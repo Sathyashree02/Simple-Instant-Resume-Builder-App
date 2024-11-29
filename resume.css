@@ -1,0 +1,158 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 2000px;
+    background-color: #C0AADA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border-right: 10px #aeacb1;
+    border-left: 10px #aeacb1 ;
+}
+
+.form-container, .resume-preview {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.form-container {
+    border-right: 20px solid #C0AADA;
+}
+
+.resume-preview {
+    flex: 1 1 45%;
+    background-color: #59365c;
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #59365c;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: white;
+    background-color: #914e75;
+    border: 1px solid #C0AADA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b35e8f;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type=checkbox] {
+    appearance: default;
+    width: 25px;
+    height: 25px;
+    background-color: #ffff;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.education-entry, .experience-entry {
+    animation: fadeIn 0.5s;
+}
+
+#skills-box {
+    border: 1px solid #59365c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.skill-item select {
+    margin-left: 10px;
+    width: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#resume-output {
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+#resume-output p {
+    margin: 5px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress {
+    height: 10px;
+    background-color: #59365c;
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container, .resume-preview {
+        flex: 1 1 100%;
+        border-right: none;
+    }
+
+    .resume-preview {
+        border-top: 1px solid #ddd;
+    }
+}
